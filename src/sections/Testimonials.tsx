@@ -42,7 +42,7 @@ export function TestimonialsSection() {
       <div className="container">
         {/* */}
         {/*  */}
-        <SectionHeader eyebrow="What Clients Say About Me" title="其他的项目" description="Don't just take my word for it. See what my clients have to say about my work." />
+        <SectionHeader eyebrow="" title="其他的项目" description="" />
 
         {/* 
           [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]:   
