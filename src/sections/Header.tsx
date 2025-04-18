@@ -1,6 +1,7 @@
+'use client'
 import { useState, useEffect } from 'react'
 
-export const Header = () => {
+export function Header() {
   // 使用 state 跟踪当前活动的区域
   const [activeSection, setActiveSection] = useState('home')
 
@@ -106,12 +107,7 @@ export const Header = () => {
               e.preventDefault() // 阻止默认的锚点跳转
               handleClick(id)
             }}
-            className={`nav-item transition-all duration-300 ${
-              // 根据当前活动区域添加不同的样式
-              activeSection === id
-                ? 'bg-white text-gray-900' // 活动状态样式
-                : 'hover:bg-white/10' // 非活动状态样式
-            }`}
+            className={`nav-item px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeSection === id ? 'bg-white text-gray-900' : 'hover:bg-white/10'}`}
           >
             {label}
           </a>

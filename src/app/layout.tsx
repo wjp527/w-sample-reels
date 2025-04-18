@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-// 引入 Google Fonts
 import { Inter, Calistoga } from 'next/font/google'
 import { twMerge } from 'tailwind-merge'
 
@@ -26,9 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* 
-        antialiased:  启用抗锯齿效果，让字体边缘更加平滑。
-      */}
       <body className={twMerge(inter.variable, calistoga.variable, 'bg-gray-900 text-white antialiased font-sans')}>{children}</body>
     </html>
   )

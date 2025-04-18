@@ -37,7 +37,7 @@ const portfolioProjects = [
   },
 ]
 
-export const ProjectsSection = () => {
+export function ProjectsSection() {
   return (
     <section id="projects" className="pb-16 lg:py-24">
       <div className="container">

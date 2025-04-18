@@ -5,7 +5,7 @@ import StarIcon from '@/assets/icons/star.svg'
 import { Fragment } from 'react'
 
 const words = ['Html', 'Css', 'Tailwindcss', 'Sass', 'Javascript', 'Typescript', 'Vue', 'React', 'Nodejs', 'KOA', 'NextJs', 'Webpack', 'Vite', 'Java', 'MySQL', 'Spring Boot', 'Redis', 'SSE', 'RabbitMQ', 'ESlasticSearch', 'WebSocket']
-export const TapeSection = () => {
+export function TapeSection() {
   return (
     <div className="py-16 lg:py-24 overflow-x-clip">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">

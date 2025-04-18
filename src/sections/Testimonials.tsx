@@ -35,7 +35,7 @@ const testimonials = [
   },
 ]
 
-export const TestimonialsSection = () => {
+export function TestimonialsSection() {
   const controls = useAnimationControls()
   return (
     <div className="py-16 lg:py-24">

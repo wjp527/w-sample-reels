@@ -1,6 +1,6 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 import grainImage from '@/assets/images/grain.jpg'
-export const ContactSection = () => {
+export function ContactSection() {
   return (
     <div id="contact" className="py-16 pt-12 lg:py-24 lg:pt-20">
       <div className="container">

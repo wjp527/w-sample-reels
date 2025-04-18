@@ -12,7 +12,7 @@ import SparkleIcon from '@/assets/icons/sparkle.svg'
 // 星星旋转组件，封装在HeroOrbit.tsx中
 import { HeroOrbit } from '@/components/HeroOrbit'
 
-export const HeroSection = () => {
+export function HeroSection() {
   /**
    * 自动滚动到下一个区域
    */
@@ -110,7 +110,7 @@ export const HeroSection = () => {
               */}
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
-            <div className="text-sm font-medium">Availabel fro nenw projects</div>
+            <div className="text-sm font-medium">Availabel fro new projects</div>
           </div>
         </div>
 

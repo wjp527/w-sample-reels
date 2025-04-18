@@ -136,7 +136,7 @@ const hobbies = [
   },
 ]
 
-export const AboutSection = () => {
+export function AboutSection() {
   // 设置鼠标拖拽的限制区域，使其只在卡片内部移动
   const constraintRef = useRef(null)
   return (
