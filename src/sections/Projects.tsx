@@ -14,7 +14,7 @@ const portfolioProjects = [
   {
     company: 'Private',
     year: '2024',
-    title: 'π图库',
+    title: 'π立方',
     results: [{ title: '前端: Vue3 + TS + Pinia + Ant-design-vue + WebSocket' }, { title: '后端: SpringBoot2 + MySQL + 多级缓存  + AI' }, { title: '项目亮点: 使用了Sa-Token 进行了统一的权限校验，使用了WebSocket进行了实时通信，Disruptor高性能无锁队列，采用了DDD驱动领域设计' }],
     link: 'http://cloudatlas.wcoder.online/',
     image: darkSaasLandingPage,
@@ -69,7 +69,7 @@ export function ProjectsSection() {
                     ))}
                   </ul>
 
-                  <a href={proejct.link} className="">
+                  <a href={proejct.link} className="" target="_blank">
                     <button
                       className="inline-flex justify-center items-center bg-white text-gray-950 h-12 w-full 
                md:w-auto px-4 rounded-xl font-semibold mt-8 gap-2"
