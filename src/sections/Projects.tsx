@@ -63,29 +63,27 @@ export function ProjectsSection() {
                   <ul className="flex flex-col gap-4 mt-4 overflow-hidden md:mt-5">
                     {proejct.results.map(result => (
                       <li key={result.title} className="flex gap-2 text-sm md:text-base text-white/50">
-                        <div className="w-4 h-4 flex gap-2">
-                          <CheckIcon className="size-5 md:size-6" />
-                        </div>
+                        <CheckIcon className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>
                     ))}
                   </ul>
-                </div>
 
-                <a href={proejct.link} target="_blank" className="flex gap-2 items-center">
-                  <button
-                    className="inline-flex justify-center items-center bg-white text-gray-950 h-12 w-full 
-              md:w-auto px-4 rounded-xl font-semibold mt-8 gap-2"
-                  >
-                    <span>查看</span>
-                    <ArrowUpRightIcon className="size-4" />
-                  </button>
-                </a>
-              </div>
-              <div className="relative h-full overflow-hidden lg:w-[450px] lg:rounded-br-xl">
-                {/* <div className="lg:absolute lg:inset-y-0 lg:h-full"> */}
-                <Image src={proejct.image} alt={proejct.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
-                {/* </div> */}
+                  <a href={proejct.link} className="">
+                    <button
+                      className="inline-flex justify-center items-center bg-white text-gray-950 h-12 w-full 
+               md:w-auto px-4 rounded-xl font-semibold mt-8 gap-2"
+                    >
+                      <span>Visit Live Site</span>
+                      <ArrowUpRightIcon className="size-4" />
+                    </button>
+                  </a>
+                </div>
+                <div className="relative h-full overflow-hidden lg:w-[450px] lg:rounded-br-xl">
+                  {/* <div className="lg:absolute lg:inset-y-0 lg:h-full"> */}
+                  <Image src={proejct.image} alt={proejct.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
+                  {/* </div> */}
+                </div>
               </div>
             </Card>
           ))}

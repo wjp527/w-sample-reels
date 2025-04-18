@@ -17,7 +17,7 @@ const testimonials = [
     position: '公司项目',
     text: '这是一个在线的积分购物商城项目，可以进行商品的浏览，购买，等功能物流!',
     avatar: memojiAvatar1,
-    link: 'https://vip.h8yi.cn/',
+    link: 'https://github.com/wjp527',
   },
   {
     name: '聚合搜索',
@@ -71,16 +71,18 @@ export function TestimonialsSection() {
                 <Fragment key={idx}>
                   {testimonials.map(testimonial => (
                     <Card key={testimonial.name} className="max-w-xs md:max-w-md md:p-8 hover:-rotate-3 transition duration-300">
-                      <div className="flex gap-4 items-center">
-                        <div className="size-14 bg-gray-700 inline-flex justify-center items-center rounded-full">
-                          <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full" />
+                      <a href={testimonial.link} target="_blank">
+                        <div className="flex gap-4 items-center">
+                          <div className="size-14 bg-gray-700 inline-flex justify-center items-center rounded-full">
+                            <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full" />
+                          </div>
+                          <div>
+                            <div className="font-semibold">{testimonial.name}</div>
+                            <div className="text-sm text-white/40">{testimonial.position}</div>
+                          </div>
                         </div>
-                        <div>
-                          <div className="font-semibold">{testimonial.name}</div>
-                          <div className="text-sm text-white/40">{testimonial.position}</div>
-                        </div>
-                      </div>
-                      <p className="mt-4 md:mt-6 text-sm md:text-base">{testimonial.text}</p>
+                        <p className="mt-4 md:mt-6 text-sm md:text-base">{testimonial.text}</p>
+                      </a>
                     </Card>
                   ))}
                 </Fragment>
