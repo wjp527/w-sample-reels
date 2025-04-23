@@ -2,7 +2,7 @@
 
 import darkSaasLandingPage from '@/assets/images/picture.png'
 import lightSaasLandingPage from '@/assets/images/code.png'
-import aiStartupLandingPage from '@/assets/images/interview.png'
+import aiStartupLandingPage from '@/assets/images/codes.png'
 import grainImage from '@/assets/images/grain.jpg'
 
 import Image from 'next/image'
@@ -33,7 +33,7 @@ const portfolioProjects = [
     title: 'π在线代码生成平台',
     results: [{ title: '前端: React + Ant Design Pro + OpenAPI + TS' }, { title: '后端: Java命令行应用开发 + FreeMaker模版引擎 + 多级缓存 + 分布式任务调度 + 对象存储' }, { title: '项目亮点: 可以在线的使用别人发布的项目代码(自己可以在下载前进行配置参数)' }],
     link: 'http://iwjp.online/',
-    image: lightSaasLandingPage,
+    image: aiStartupLandingPage,
   },
 ]
 
